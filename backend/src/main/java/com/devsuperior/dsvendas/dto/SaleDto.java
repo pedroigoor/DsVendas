@@ -5,6 +5,15 @@ import java.time.LocalDate;
 
 import com.devsuperior.dsvendas.enteties.Sale;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@EqualsAndHashCode
+@NoArgsConstructor
 public class SaleDto implements Serializable {
 
 	/**
@@ -18,9 +27,7 @@ public class SaleDto implements Serializable {
 	private LocalDate date;
 	private SellerDto seller;
 	
-	public SaleDto() {
-		
-	}
+	
 	public SaleDto(Long id, Integer visited, Integer deals, Double amount, LocalDate date, SellerDto seller) {
     	this.id = id;
 		this.visited = visited;
@@ -37,42 +44,6 @@ public class SaleDto implements Serializable {
 		this.amount = sale.getAmount();
 		this.date = sale.getDate();
 		this.seller = new SellerDto(sale.getSeller());
-	}
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public Integer getVisited() {
-		return visited;
-	}
-	public void setVisited(Integer visited) {
-		this.visited = visited;
-	}
-	public Integer getDeals() {
-		return deals;
-	}
-	public void setDeals(Integer deals) {
-		this.deals = deals;
-	}
-	public Double getAmount() {
-		return amount;
-	}
-	public void setAmount(Double amount) {
-		this.amount = amount;
-	}
-	public LocalDate getDate() {
-		return date;
-	}
-	public void setDate(LocalDate date) {
-		this.date = date;
-	}
-	public SellerDto getSeller() {
-		return seller;
-	}
-	public void setSeller(SellerDto seller) {
-		this.seller = seller;
 	}
 	
 	

@@ -10,9 +10,19 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 // mudar para lombok procurar na pagina do devsuperio
 @Entity
 @Table (name = "tb_sellers")
+
+@Getter
+@Setter
+@EqualsAndHashCode
+@NoArgsConstructor
 public class Seller {
 	
 	@Id
@@ -23,31 +33,9 @@ public class Seller {
 	@OneToMany(mappedBy = "seller")
 	private List<Sale> sales = new ArrayList<>();
 
-	public Seller() {
-	}
 
 	public Seller(Long id, String name) {
 		this.id = id;
 		this.name = name;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public List<Sale> getSales() {
-		return sales;
 	}
 }
