@@ -1,5 +1,5 @@
 # Ds Vendas
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/pedroigoor/projeto-sds5/blob/master/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/pedroigoor/DsVendas/blob/master/LICENSE) 
 
 # Sobre o projeto
 
