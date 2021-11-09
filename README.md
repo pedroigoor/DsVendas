@@ -5,7 +5,7 @@
 
 https://desvendas.netlify.app/
 
-Ds Vendas é uma aplicação full stack web  construída durante a 5ª edição da **Semana DevSuperior** (#sds5), evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
+Ds Vendas é uma aplicação full stack web  construída durante a 5ª edição da **Semana DevSuperior** (#sds5), evento organizado pela [DevSuperior](https://devsuperior.com.br "Site da DevSuperior").
 
 A aplicação consiste em uma exibição do número de vendas por vendedores, onde são listados no app web, que também apresenta um dashboard com gráficos baseados nestes dados.
 
